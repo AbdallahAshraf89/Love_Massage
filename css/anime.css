@@ -1,0 +1,83 @@
+/* start global rules */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    caret-color: transparent;
+    background-color: black;
+}
+
+body::selection {
+    background-color: black;
+    color: white;
+}
+
+/* end global rules */
+
+.text {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    font-size: 30px;
+    transition: .3s;
+}
+
+.center {
+    cursor: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 50%;
+    box-shadow: inset 0px 0px 0px 0px white;
+    transition: 1s;
+}
+
+span {
+    position: relative;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    text-shadow: -4px 0px 18px white;
+    white-space: nowrap;
+    transition: .3s;
+    font-size: 0px;
+    font-weight: bold;
+}
+
+i {
+    color: white;
+    transition: .3s;
+}
+
+.center:hover span {
+    font-size: 80px;
+}
+
+.center:hover span i {
+    color: red;
+}
+
+.center:hover {
+    box-shadow: inset 0px 0px 20px 0px white;
+}
+
+.center:hover .text {
+    font-size: 0px;
+    top: 10%;
+}
